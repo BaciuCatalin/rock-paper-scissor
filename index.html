@@ -11,34 +11,45 @@
 	<title>Rock Paper Scissor</title>
 </head>
 <body>
-	<section class="game container">
-		<h1 class="title">Rock Paper Scissor</h1>
+	<div class="main">
+		<header>
+			<h1 class="title">Rock Paper Scissor</h1>
+		</header>
+		<main class="game">
+			<section class="score">
+				<div class="display-score">
+					<h2>Player</h2>
+					<p class="p-count">0</p>
+					<span class="choice" id="p-choice"></span>
+				</div>
+				<article>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/1200px-Rock-paper-scissors.svg.png"
+						alt="rules">
+				</article>
+				<div class="display-score">
+					<h2>Computer</h2>
+					<p class="c-count">0</p>
+					<span class="choice" id="c-choice"></span>
+				</div>
+			</section>
+			<section class="display-options">
+				<p class="move">Choose your move</p>
+				<span class="movesleft">Moves Left: 10 </span>
 
-		<div class="score">
-			<div>
-				<h2>Player</h2><br>
-				<p class="p-count count">0</p><br>
-				<p class="choice">Choice: <span id="p-choice"></span></p>
-			</div>
-			<div>
-				<h2>Computer</h2><br>
-				<p class="c-count count">0</p><br>
-				<p class="choice">Choice: <span id="c-choice"></span></p>
-			</div>
-		</div>
-		<div class="move">Choose your move</div>
+				<div class="options">
+					<button class="options-button rock" id="rock">Rock</button>
+					<button class="options-button paper" id="paper">Paper</button>
+					<button class="options-button scissor" id="scissor">Scissors</button>
+				</div>
 
-		<div class="movesleft">Moves Left: 10 </div>
+				<div class="result"></div>
+				<div class="restart-button">
+					<button class="restart" id="restart"></button>
+				</div>
+			</section>
+		</main>
+	</div>
 
-		<div class="options">
-			<button class="rock" id="rock">Rock</button>
-			<button class="paper" id="paper">Paper</button>
-			<button class="scissor" id="scissor">Scissors</button>
-		</div>
-
-		<div class="result"></div>
-
-		<button class="reload"></button>
-	</section>
+	</div>
 </body>
 </html>
