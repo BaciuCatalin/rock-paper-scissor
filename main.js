@@ -16,8 +16,11 @@ const game = () => {
     playerChoices.forEach((possibleChoice, index) => {
       possibleChoice.addEventListener("click", function (e) {
         playerChoice = e.target.id;
+        if (playerChoice == "restart") {
+          return;
+        } else {
         playerChoiceDisplay.innerHTML = handOptions[index];
-     
+        }
         const movesLeft = document.querySelector(".movesleft");
         moves++;
         movesLeft.innerText = `Moves Left: ${10 - moves}`;

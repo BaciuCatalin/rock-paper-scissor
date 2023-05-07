@@ -35,7 +35,7 @@ header .title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1rem;
 }
 
@@ -108,7 +108,7 @@ header .title {
 
 .main .game .display-options .result {
   text-align: center;
-  margin-top: 2rem;
+  margin: 1rem 0 1rem 0;
   font-size: 1.5rem;
   color: #fad22e;
 }
@@ -124,7 +124,7 @@ header .title {
   flex-direction: column;
   align-items: center;
   display: none;
-  margin-top: 2rem;
+  margin: 1rem 0 1rem 0;
   padding: 0.8rem;
   background: #008000;
   outline: none;
