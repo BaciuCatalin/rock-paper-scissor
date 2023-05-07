@@ -17,7 +17,6 @@ const game = () => {
       possibleChoice.addEventListener("click", function (e) {
         playerChoice = e.target.id;
         playerChoiceDisplay.innerHTML = handOptions[index];
-     
         const movesLeft = document.querySelector(".movesleft");
         moves++;
         movesLeft.innerText = `Moves Left: ${10 - moves}`;
